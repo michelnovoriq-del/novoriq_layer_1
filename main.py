@@ -91,8 +91,7 @@ async def handle_call_tool(name: str, arguments: dict) -> list[TextContent]:
 @app.api_route("/", methods=["GET", "POST", "HEAD"])
 @app.api_route("/.well-known/mcp/server-card.json", methods=["GET", "POST", "HEAD"])
 def get_server_card():
-    # REPLACE THIS URL AFTER RENDER DEPLOYMENT
-    BASE_URL = "https://PENDING-RENDER-URL.onrender.com" 
+    BASE_URL = "https://novoriq-layer-1.onrender.com" 
     
     return JSONResponse(content={
         "$schema": "https://modelcontextprotocol.io/schemas/server-card/v1.0",
